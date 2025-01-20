@@ -39,7 +39,7 @@
 // app/(root)/layout.tsx
 import React from 'react';
 import Sidebar from '@/components/shared/Sidebar';
-
+import MobileNav from '@/components/shared/MobileNav';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <main className="root">
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <Sidebar />
       
       {/* Mobile Navigation */}
-      {/* <MobileNav /> */}
+      <MobileNav />
 
       <div className="root-container">
         <div className="wrapper">
